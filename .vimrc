@@ -43,3 +43,7 @@ set scrolloff=3
 " map tabp, tabn to <F3>, <F4>
 map <F3> :tabp<CR>
 map <F4> :tabn<CR>
+
+" Add full file path to your existing statusline
+set statusline+=%F
+set laststatus=2
