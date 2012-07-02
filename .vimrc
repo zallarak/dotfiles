@@ -4,9 +4,9 @@ filetype plugin on
 filetype indent on
 
 " Tabstops are 4 spaces
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set autoindent
 
@@ -47,3 +47,8 @@ map <F4> :tabn<CR>
 " Add full file path to your existing statusline
 set statusline+=%F
 set laststatus=2
+
+" Adds cursor column highlight
+au WinLeave * set nocursorline nocursorcolumn
+au WinEnter * set cursorline cursorcolumn
+set cursorline cursorcolumn
