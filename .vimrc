@@ -1,3 +1,6 @@
+" pathogen
+call pathogen#infect()
+
 " Set filetype stuff to on
 filetype on
 filetype plugin on

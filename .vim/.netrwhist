@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/zain/code/ntwit/node_modules'
+let g:netrw_dirhist_2='/home/zain/code/collaborative_canvas_paint/node_modules'
+let g:netrw_dirhist_3='/home/zain/code/collaborative_canvas_paint_analytics/node_modules'
+let g:netrw_dirhist_4='/home/zain/code/collaborative_canvas_paint/node_modules'
+let g:netrw_dirhist_5='/home/zain/code/python_utils/socket_sandbox'
+let g:netrw_dirhist_6='/home/zain/code/lilhttp/.git'
+let g:netrw_dirhist_7='/home/zain/code/book-annotation/django_base/django_base/book_annotation'
+let g:netrw_dirhist_8='/home/zain/code/books-website/book-annotation-website/books'
