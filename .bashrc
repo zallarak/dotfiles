@@ -82,6 +82,9 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# v for vim
+alias v='gvim'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -106,4 +109,33 @@ alias kd=". kd.sh"
 alias scheme="rlwrap scheme"
 alias racket="rlwrap racket"
 
-PATH=/usr/local/jdk1.7.0_03/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=/usr/local/jdk1.7.0_03/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$HOME/go/bin:$PATH # Adds Go Language to PATH
+
+## git branch display
+#function parse_git_branch {
+#  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+#}
+#function proml {
+#  local        BLUE="\[\033[0;34m\]"
+#  local         RED="\[\033[0;31m\]"
+#  local   LIGHT_RED="\[\033[1;31m\]"
+#  local       GREEN="\[\033[0;32m\]"
+#  local LIGHT_GREEN="\[\033[1;32m\]"
+#  local       WHITE="\[\033[1;37m\]"
+#  local  LIGHT_GRAY="\[\033[0;37m\]"
+#  case $TERM in
+#    xterm*)
+#    TITLEBAR='\[\033]0;\u@\h:\w\007\]'
+#    ;;
+#    *)
+#    TITLEBAR=""
+#    ;;
+#  esac
+#PS1="${TITLEBAR}\
+#\u@\h:\w$WHITE\$(parse_git_branch)\
+#$LIGHT_GRAY> "
+#PS2='> '
+#PS4='+ '
+#}
+#proml
