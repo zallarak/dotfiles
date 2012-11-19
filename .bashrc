@@ -139,3 +139,4 @@ export PATH=$HOME/go/bin:$PATH # Adds Go Language to PATH
 #PS4='+ '
 #}
 #proml
+export PYTHONSTARTUP=~/.pythonrc
