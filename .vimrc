@@ -1,6 +1,3 @@
-" pathogen
-call pathogen#infect()
-
 " Set filetype stuff to on
 filetype on
 filetype plugin on
@@ -42,6 +39,7 @@ set backspace=2
 
 " Gives a 3 line scroll buffer
 set scrolloff=3
+set scrolljump=4
 
 " map tabp, tabn to <F3>, <F4>
 map <F3> :tabp<CR>
@@ -51,7 +49,16 @@ map <F4> :tabn<CR>
 set statusline+=%F
 set laststatus=2
 
-" Adds cursor column highlight
-au WinLeave * set nocursorline nocursorcolumn
-au WinEnter * set cursorline cursorcolumn
-set cursorline cursorcolumn
+" Theme
+colorscheme evening
+
+" Remove some stuff
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set go-=L
+
+set number
+
+let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
+let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
