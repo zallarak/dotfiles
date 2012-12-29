@@ -60,5 +60,9 @@ set go-=L
 
 set number
 
-let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
-let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+"let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
+"let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+
+set clipboard=unnamedplus "share cp/paste buffer with system
+
+highlight MatchParen cterm=bold ctermfg=cyan
